@@ -10,10 +10,10 @@
   <body>
     <header class="header">
       <h1 class="header__title">
-        <span class="first-letter">O</span>pen
-        <span class="first-letter">M</span>usic
+        <span class="first-letter">o</span>pen
+        <span class="first-letter">m</span>usic
       </h1>
-      <button class="header__btn-mode-ligth" type="button">
+      <button id="theme-toggle" type="button">
         <svg
           width="15"
           height="16"
@@ -27,108 +27,138 @@
           />
         </svg>
       </button>
-      <button class="header__btn-mode-dark btn-hidden" type="button">
-        <svg
-          width="18"
-          height="18"
-          viewBox="0 0 18 18"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M9 6C10.625 6 12 7.375 12 9C12 10.6562 10.625 12 9 12C7.34375 12 6 10.6562 6 9C6 7.375 7.34375 6 9 6ZM16.6875 8.53125C17.0938 8.71875 17.0938 9.3125 16.6875 9.5L13.7188 10.9688L14.7812 14.125C14.9062 14.5312 14.5 14.9375 14.0938 14.8125L10.9375 13.75L9.46875 16.7188C9.28125 17.125 8.6875 17.125 8.5 16.7188L7.03125 13.75L3.875 14.8125C3.46875 14.9375 3.0625 14.5312 3.1875 14.125L4.25 10.9688L1.28125 9.5C0.875 9.3125 0.875 8.71875 1.28125 8.53125L4.25 7.0625L3.1875 3.90625C3.0625 3.5 3.46875 3.09375 3.875 3.21875L7.03125 4.28125L8.5 1.3125C8.6875 0.90625 9.28125 0.90625 9.46875 1.3125L10.9375 4.28125L14.0938 3.21875C14.5 3.09375 14.9062 3.5 14.7812 3.90625L13.7188 7.0625L16.6875 8.53125ZM11.8125 11.8438C13.375 10.2812 13.375 7.75 11.8125 6.1875C10.25 4.625 7.71875 4.625 6.15625 6.1875C4.59375 7.75 4.59375 10.2812 6.15625 11.8438C7.71875 13.4062 10.25 13.4062 11.8125 11.8438Z"
-            fill="#F8F9FA"
-          />
-        </svg>
-      </button>
     </header>
     <main class="main">
-      <section class="main__section-genero">
-        <h2>Gênero Musical</h2>
-        <ul class="generos">
-          <li>Todos</li>
-          <li>Pop</li>
-          <li>MPB</li>
-          <li>Forró</li>
-          <li>Samba</li>
-          <li>Baião</li>
-          <li>Rap</li>
-          <li>Hip-Hop</li>
+      <section class="main__section-gender">
+        <h2 class="gender-title">Gênero Musical</h2>
+        <ul class="gender-list">
+          <li>
+            <button type="button" class="gender-Select selected">Todos</button>
+          </li>
+          <li>
+            <button type="button" class="gender-Select">Pop</button>
+          </li>
+          <li>
+            <button type="button" class="gender-Select">MPB</button>
+          </li>
+          <li>
+            <button type="button" class="gender-Select">Forró</button>
+          </li>
+          <li>
+            <button type="button" class="gender-Select">Samba</button>
+          </li>
+          <li>
+            <button type="button" class="gender-Select">Baião</button>
+          </li>
+          <li>
+            <button type="button" class="gender-Select">Rap</button>
+          </li>
+          <li>
+            <button type="button" class="gender-Select">Hip-Hop</button>
+          </li>
         </ul>
       </section>
-      <section class="main__section-preco">
-        <h2>Definir Preço</h2>
-        <p>Até R$ 100</p>
-        <input type="range" />
+      <section class="main__section-price">
+        <header class="range_header">
+          <h2 class="range-title">Definir Preço</h2>
+          <span class="range_value">Até <span id="value">R$ 100</span></span>
+        </header>
+        <div class="range_conteiner">
+          <input
+            class="main__range-price"
+            id="price-range"
+            type="range"
+            min="0"
+            max="350"
+            value="100"
+            step="0.1"
+          />
+        </div>
       </section>
       <section class="main__section-albuns">
-        <h2>Albuns Encontrados</h2>
-        <ul class="albuns">
+        <h2 class="albuns-title">Albuns Encontrados</h2>
+        <ul class="albuns-list">
           <li class="album-card">
             <img
               src="./src/assets/imgs/cover-1.png"
               alt="Capa do álbum Acabou o Chorare"
             />
             <article>
-              <header>
-                <h3>Acabou o Chorare</h3>
-                <p class="album-artista">Novos Bainos</p>
+              <header class="card-header">
+                <h3 class="card-header-title">Acabou o Chorare</h3>
+                <div class="card-header-content">
+                  <span class="card-header-artista">Novos Bainos</span>
+                  <span class="card-header-album-gender">MPB</span>
+                </div>
               </header>
-              <p class="album-genero">MPB</p>
-              <footer class="album-preco">
-                <span>R$ 137,91</span>
-                <button type="button">Comprar</button>
+              <footer class="card-footer">
+                <div class="card-footer-content">
+                  <span>R$ 137,91</span>
+                  <button type="button">Comprar</button>
+                </div>
               </footer>
             </article>
           </li>
-          <li>
+          <li class="album-card">
             <img
               src="./src/assets/imgs/cover-2.png"
-              alt="imagem referente a capa do album The Well"
+              alt="Capa do álbum The Wall"
             />
             <article>
-              <header>
-                <h3>The Well</h3>
-                <p class="album-artista">Pink Floyd</p>
+              <header class="card-header">
+                <h3 class="card-header-title">The Wall</h3>
+                <div class="card-header-content">
+                  <span class="card-header-artista">Pink Floyd</span>
+                  <span class="card-header-album-gender">Rock</span>
+                </div>
               </header>
-              <p class="album-genero">Rock</p>
-              <footer class="album-preco">
-                <span>R$ 123,56</span>
-                <button type="button">Comprar</button>
+              <footer class="card-footer">
+                <div class="card-footer-content">
+                  <span>R$ 123,56</span>
+                  <button type="button">Comprar</button>
+                </div>
               </footer>
             </article>
           </li>
           <li class="album-card">
             <img
               src="./src/assets/imgs/cover-3.png"
-              alt="Capa do álbum To Pimp a Butterfly de Kendrick Lamar"
+              alt="Capa do álbum To Pimp a Butterfly"
             />
             <article>
-              <header>
-                <h3>To Pimp a Butterfly</h3>
-                <p class="album-artista">Kendrick Lamar</p>
+              <header class="card-header">
+                <h3 class="card-header-title">To Pimp a Butterfly</h3>
+                <div class="card-header-content">
+                  <span class="card-header-artista">Kendrick Lamar</span>
+                  <span class="card-header-album-gender">Rap</span>
+                </div>
               </header>
-              <p class="album-genero">Rap</p>
-              <footer class="album-preco">
-                <span>R$ 102,66</span>
-                <button type="button">Comprar</button>
+              <footer class="card-footer">
+                <div class="card-footer-content">
+                  <span>R$ 102,66</span>
+                  <button type="button">Comprar</button>
+                </div>
               </footer>
             </article>
           </li>
-          <li>
+          <li class="album-card">
             <img
               src="./src/assets/imgs/cover-2.png"
-              alt="imagem referente a capa do album The Well"
+              alt="Capa do álbum The Wall"
             />
             <article>
-              <header>
-                <h3>The Well</h3>
-                <p class="album-artista">Pink Floyd</p>
+              <header class="card-header">
+                <h3 class="card-header-title">The Wall</h3>
+                <div class="card-header-content">
+                  <span class="card-header-artista">Pink Floyd</span>
+                  <span class="card-header-album-gender">Rock</span>
+                </div>
               </header>
-              <p class="album-genero">Rock</p>
-              <footer class="album-preco">
-                <span>R$ 123,56</span>
-                <button type="button">Comprar</button>
+              <footer class="card-footer">
+                <div class="card-footer-content">
+                  <span>R$ 123,56</span>
+                  <button type="button">Comprar</button>
+                </div>
               </footer>
             </article>
           </li>
@@ -138,31 +168,39 @@
               alt="Capa do álbum Acabou o Chorare"
             />
             <article>
-              <header>
-                <h3>Acabou o Chorare</h3>
-                <p class="album-artista">Novos Bainos</p>
+              <header class="card-header">
+                <h3 class="card-header-title">Acabou o Chorare</h3>
+                <div class="card-header-content">
+                  <span class="card-header-artista">Novos Bainos</span>
+                  <span class="card-header-album-gender">MPB</span>
+                </div>
               </header>
-              <p class="album-genero">MPB</p>
-              <footer class="album-preco">
-                <span>R$ 137,91</span>
-                <button type="button">Comprar</button>
+              <footer class="card-footer">
+                <div class="card-footer-content">
+                  <span>R$ 137,91</span>
+                  <button type="button">Comprar</button>
+                </div>
               </footer>
             </article>
           </li>
           <li class="album-card">
             <img
               src="./src/assets/imgs/cover-3.png"
-              alt="Capa do álbum To Pimp a Butterfly de Kendrick Lamar"
+              alt="Capa do álbum To Pimp a Butterfly"
             />
             <article>
-              <header>
-                <h3>To Pimp a Butterfly</h3>
-                <p class="album-artista">Kendrick Lamar</p>
+              <header class="card-header">
+                <h3 class="card-header-title">To Pimp a Butterfly</h3>
+                <div class="card-header-content">
+                  <span class="card-header-artista">Kendrick Lamar</span>
+                  <span class="card-header-album-gender">Rap</span>
+                </div>
               </header>
-              <p class="album-genero">Rap</p>
-              <footer class="album-preco">
-                <span>R$ 102,66</span>
-                <button type="button">Comprar</button>
+              <footer class="card-footer">
+                <div class="card-footer-content">
+                  <span>R$ 102,66</span>
+                  <button type="button">Comprar</button>
+                </div>
               </footer>
             </article>
           </li>

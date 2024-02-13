@@ -1,0 +1,92 @@
+.albuns-list {
+  margin-bottom: 4.1875rem;
+}
+
+.albuns-title {
+  margin: 2rem 0rem 1.1875rem 0rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.6875rem 0px;
+}
+
+.albuns-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.25rem 3.125rem;
+  flex-wrap: wrap;
+}
+
+.album-card {
+  flex-grow: 1;
+  width: 308px;
+  background-color: var(--color-gray-7);
+  border-radius: 0.25rem;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.album-card:hover {
+  background-color: var(--color-gray-6);
+}
+
+.album-card img {
+  width: 100%;
+}
+
+.card-header-title {
+  padding: 0.3125rem 0px 0.3125rem 1rem;
+  margin: 0.605rem 0px;
+  font-size: 1.375rem;
+  font-weight: 600;
+}
+
+.card-header-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 1rem;
+}
+
+.card-header-content .card-header-artista,
+.card-header-album-gender {
+  font-size: 1rem;
+  color: var(--color-gray-3);
+}
+
+.card-footer {
+  margin-top: 0.6044rem;
+  padding: 1rem;
+}
+
+.card-footer-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-footer-content span {
+  font-weight: 600;
+  padding: 0.5313rem 0px;
+}
+
+.card-footer-content button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5.4375rem;
+  height: 2.5rem;
+  padding: 1.25rem 0.625rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  background: var(--color-brand-2);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.card-footer-content button:hover {
+  background: var(--color-brand-1);
+}

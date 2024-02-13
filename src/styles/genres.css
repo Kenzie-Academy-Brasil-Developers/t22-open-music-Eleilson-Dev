@@ -1,0 +1,37 @@
+.main__section-gender {
+  padding: 1rem 0rem;
+}
+
+.gender-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem 0rem;
+  margin-bottom: 1rem;
+}
+
+.gender-list {
+  display: flex;
+  padding: 1rem 0rem;
+  gap: 1.5625rem;
+}
+
+.gender-Select {
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.6375rem 0.7rem;
+  background-color: var(--color-gray-6);
+  color: var(--color-gray-3);
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.gender-Select:hover {
+  border: 1px solid var(--color-gray-3);
+}
+
+.selected {
+  background: var(--color-gray-2);
+  color: var(--color-gray-7);
+}
