@@ -3,140 +3,140 @@ html {
 }
 
 body {
-  font-size: 1.6em; /* 1.6 * 62.5% = 100% da fonte base */
+  font-size: 1.6em;
 }
 
 @media (max-width: 1280px) {
   html {
-    font-size: 82.5%; /* 62.5% de 55% = 34.375% */
+    font-size: 82.5%;
   }
   body {
-    font-size: 1.44em; /* 1.44 * 34.375% = 49.5%, equivalente a 144% da fonte base */
+    font-size: 1.44em;
   }
 }
 
 @media (max-width: 1020px) {
   html {
-    font-size: 75.5%; /* 62.5% de 50% = 31.25% */
+    font-size: 75.5%;
   }
   body {
-    font-size: 1.28em; /* 1.28 * 31.25% = 40%, equivalente a 128% da fonte base */
+    font-size: 1.28em;
   }
 }
 
 @media (max-width: 900px) {
   html {
-    font-size: 70%; /* 62.5% de 45% = 28.125% */
+    font-size: 70%;
   }
   body {
-    font-size: 1.152em; /* 1.152 * 28.125% = 32.4%, equivalente a 115.2% da fonte base */
+    font-size: 1.152em;
   }
 }
 
 @media (max-width: 830px) {
   html {
-    font-size: 65.6%; /* 62.5% de 41.6% = 26% */
+    font-size: 65.6%;
   }
   body {
-    font-size: 1.024em; /* 1.024 * 26% = 26.24%, equivalente a 102.4% da fonte base */
+    font-size: 1.024em;
   }
 }
 
 @media (max-width: 670px) {
   html {
-    font-size: 60%; /* 62.5% de 36% = 22.5% */
+    font-size: 60%;
   }
   body {
-    font-size: 0.896em; /* 0.896 * 22.5% = 20.16%, equivalente a 89.6% da fonte base */
+    font-size: 0.896em;
   }
 }
 
 @media (max-height: 622px) {
   html {
-    font-size: 55%; /* 62.5% de 32% = 20% */
+    font-size: 55%;
   }
   body {
-    font-size: 0.768em; /* 0.768 * 20% = 15.36%, equivalente a 76.8% da fonte base */
+    font-size: 0.768em;
   }
 }
 
 @media (max-width: 580px) {
   html {
-    font-size: 50%; /* 62.5% de 28.8% = 18% */
+    font-size: 50%;
   }
   body {
-    font-size: 0.64em; /* 0.64 * 18% = 11.52%, equivalente a 64% da fonte base */
+    font-size: 0.64em;
   }
 }
 
 @media (max-width: 530px) {
   html {
-    font-size: 45%; /* 62.5% de 25.6% = 16% */
+    font-size: 45%;
   }
   body {
-    font-size: 0.576em; /* 0.576 * 16% = 9.216%, equivalente a 57.6% da fonte base */
+    font-size: 0.576em;
   }
 }
 
 @media (max-width: 460px) {
   html {
-    font-size: 40%; /* 62.5% de 22.4% = 14% */
+    font-size: 40%;
   }
   body {
-    font-size: 0.512em; /* 0.512 * 14% = 7.168%, equivalente a 51.2% da fonte base */
+    font-size: 0.512em;
   }
 }
 
 @media (max-width: 425px) {
   html {
-    font-size: 35%; /* 62.5% de 19.2% = 12% */
+    font-size: 35%;
   }
   body {
-    font-size: 0.448em; /* 0.448 * 12% = 5.376%, equivalente a 44.8% da fonte base */
+    font-size: 0.448em;
   }
 }
 
 @media (max-width: 390px) {
   html {
-    font-size: 30%; /* 62.5% de 16% = 10% */
+    font-size: 30%;
   }
   body {
-    font-size: 0.384em; /* 0.384 * 10% = 3.84%, equivalente a 38.4% da fonte base */
+    font-size: 0.384em;
   }
 }
 
 @media (max-width: 350px) {
   html {
-    font-size: 25%; /* 62.5% de 12.8% = 8% */
+    font-size: 25%;
   }
   body {
-    font-size: 0.32em; /* 0.32 * 8% = 2.56%, equivalente a 32% da fonte base */
+    font-size: 0.32em;
   }
 }
 
 @media (max-width: 320px) {
   html {
-    font-size: 20%; /* 62.5% de 11.52% = 7.2% */
+    font-size: 20%;
   }
   body {
-    font-size: 0.288em; /* 0.288 * 7.2% = 2.0736%, equivalente a 28.8% da fonte base */
+    font-size: 0.288em;
   }
 }
 
 @media (max-width: 300px) {
   html {
-    font-size: 15%; /* 62.5% de 10.24% = 6.4% */
+    font-size: 15%;
   }
   body {
-    font-size: 0.256em; /* 0.256 * 6.4% = 1.6384%, equivalente a 25.6% da fonte base */
+    font-size: 0.256em;
   }
 }
 
 @media (max-width: 280px) {
   html {
-    font-size: 10%; /* 62.5% de 8.96% = 5.6% */
+    font-size: 10%;
   }
   body {
-    font-size: 0.224em; /* 0.224 * 5.6% = 1.2544%, equivalente a 22.4% da fonte base */
+    font-size: 0.224em;
   }
 }
