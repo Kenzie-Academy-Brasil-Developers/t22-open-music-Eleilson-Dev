@@ -10,9 +10,11 @@
 }
 
 .gender-list {
+  position: relative;
   display: flex;
   padding: 1rem 0rem;
   gap: 1.5625rem;
+  width: 100%;
 }
 
 .gender-Select {
