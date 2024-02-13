@@ -1,0 +1,39 @@
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.1875rem solid var(--color-brand-1);
+  padding: 3rem 0;
+  background-color: var(--color-gray-8);
+}
+
+.header__title {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.first-letter {
+  color: var(--color-brand-1);
+}
+
+.header__btn-mode-ligth,
+.header__btn-mode-dark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5625rem 0.875rem;
+  border-radius: 0.3125rem;
+  background-color: var(--color-gray-6);
+  border: none;
+  cursor: pointer;
+}
+
+.header__btn-mode-dark {
+  background-color: var(--color-gray-3);
+}
+
+.btn-hidden {
+  display: none;
+}

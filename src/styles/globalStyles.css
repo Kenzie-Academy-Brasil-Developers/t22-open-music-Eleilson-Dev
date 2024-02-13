@@ -1,0 +1,27 @@
+/* estilos globais */
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  /* Brand Colors */
+  --color-brand-1: #6f00ff;
+  --color-brand-2: #8629ff;
+
+  /* Gray Colors */
+  --color-gray-1: #15171a;
+  --color-gray-2: #212529;
+  --color-gray-3: #2b2f33;
+  --color-gray-4: #ced4da;
+  --color-gray-5: #dee2e6;
+  --color-gray-6: #f1f3f5;
+  --color-gray-7: #f8f9fa;
+  --color-gray-8: #fdfeff;
+}
+
+body {
+  max-width: 1024px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  padding: 0rem 3rem;
+  background-color: var(--color-gray-8);
+}
