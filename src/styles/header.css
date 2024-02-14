@@ -8,6 +8,7 @@
   padding: 3rem 0;
   background-color: var(--color-gray-8);
   margin-bottom: 0.25rem;
+  z-index: 10;
 }
 
 .header__title {
