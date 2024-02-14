@@ -8,7 +8,7 @@ body {
 
 @media (max-width: 1280px) {
   html {
-    font-size: 82.5%;
+    font-size: 98%;
   }
   body {
     font-size: 1.44em;
@@ -17,7 +17,7 @@ body {
 
 @media (max-width: 1020px) {
   html {
-    font-size: 75.5%;
+    font-size: 96%;
   }
   body {
     font-size: 1.28em;
@@ -26,7 +26,7 @@ body {
 
 @media (max-width: 900px) {
   html {
-    font-size: 70%;
+    font-size: 94%;
   }
   body {
     font-size: 1.152em;
@@ -35,7 +35,7 @@ body {
 
 @media (max-width: 830px) {
   html {
-    font-size: 65.6%;
+    font-size: 82%;
   }
   body {
     font-size: 1.024em;
@@ -44,16 +44,16 @@ body {
 
 @media (max-width: 670px) {
   html {
-    font-size: 60%;
+    font-size: 74%;
   }
   body {
     font-size: 0.896em;
   }
 }
 
-@media (max-height: 622px) {
+@media (max-width: 622px) {
   html {
-    font-size: 55%;
+    font-size: 70%;
   }
   body {
     font-size: 0.768em;
@@ -62,7 +62,7 @@ body {
 
 @media (max-width: 580px) {
   html {
-    font-size: 50%;
+    font-size: 62%;
   }
   body {
     font-size: 0.64em;
@@ -71,7 +71,7 @@ body {
 
 @media (max-width: 530px) {
   html {
-    font-size: 45%;
+    font-size: 54%;
   }
   body {
     font-size: 0.576em;
@@ -80,7 +80,7 @@ body {
 
 @media (max-width: 460px) {
   html {
-    font-size: 40%;
+    font-size: 50%;
   }
   body {
     font-size: 0.512em;
@@ -89,7 +89,7 @@ body {
 
 @media (max-width: 425px) {
   html {
-    font-size: 35%;
+    font-size: 45%;
   }
   body {
     font-size: 0.448em;
@@ -98,7 +98,7 @@ body {
 
 @media (max-width: 390px) {
   html {
-    font-size: 30%;
+    font-size: 41%;
   }
   body {
     font-size: 0.384em;
@@ -107,7 +107,7 @@ body {
 
 @media (max-width: 350px) {
   html {
-    font-size: 25%;
+    font-size: 36%;
   }
   body {
     font-size: 0.32em;
@@ -116,7 +116,7 @@ body {
 
 @media (max-width: 320px) {
   html {
-    font-size: 20%;
+    font-size: 34%;
   }
   body {
     font-size: 0.288em;
@@ -125,7 +125,7 @@ body {
 
 @media (max-width: 300px) {
   html {
-    font-size: 15%;
+    font-size: 32%;
   }
   body {
     font-size: 0.256em;
@@ -134,7 +134,7 @@ body {
 
 @media (max-width: 280px) {
   html {
-    font-size: 10%;
+    font-size: 30%;
   }
   body {
     font-size: 0.224em;
