@@ -18,6 +18,9 @@
 }
 
 .gender-Select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
   border-radius: 0.25rem;
   font-size: 1rem;
