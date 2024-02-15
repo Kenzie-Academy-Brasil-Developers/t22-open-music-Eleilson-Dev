@@ -9,7 +9,7 @@ const addAlbumIntoList = (albumList) => {
   const albunsListHTML = document.querySelector('.albuns-list');
   albunsListHTML.innerHTML = '';
 
-  albumList.forEach(async (element) => {
+  albumList.forEach((element) => {
     albunsListHTML.innerHTML += createCard(element);
   });
 };
