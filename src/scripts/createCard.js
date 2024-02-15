@@ -2,7 +2,7 @@ const createCard = ({ title, genre, band, price, img }) => {
   return `
     <li class="album-card">
       <img
-        src="./src/assets/imgs/${img}"
+        src="${img}"
         alt="Capa do álbum ${title}"
       />
       <article>

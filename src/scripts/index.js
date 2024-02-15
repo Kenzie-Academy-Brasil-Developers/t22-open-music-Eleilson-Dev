@@ -1,6 +1,7 @@
 // script global
 import { albumList } from './albumsDatabase.js';
 import changeTheme from './changeTheme.js';
+import selectGender from './selectGender.js';
 import activeRange from './inputRange.js';
 import createCard from './createCard.js';
 
@@ -15,6 +16,7 @@ const addAlbumIntoList = (albumList) => {
 
 const routine = () => {
   changeTheme();
+  selectGender();
   activeRange();
   addAlbumIntoList(albumList);
 };
