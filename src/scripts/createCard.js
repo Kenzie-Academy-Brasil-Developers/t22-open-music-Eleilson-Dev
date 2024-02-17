@@ -1,3 +1,5 @@
+// essa function cria um template HTML com a estrutura base de um album ja pronto pra ser inserido no HTML
+
 const createCard = ({ title, genre, band, price, img }) => {
   return `
     <li class="album-card">

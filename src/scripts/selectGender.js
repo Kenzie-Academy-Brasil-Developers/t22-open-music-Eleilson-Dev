@@ -1,3 +1,5 @@
+// esse script faz a selecao do gerenero musical com base na preferencia do usuario
+
 const genresHTML = document.querySelectorAll('.gender-Select');
 // selectedBtn => Mantém uma referência ao botão atualmente selecionado
 let selectedBtn = document.querySelector('.selected');

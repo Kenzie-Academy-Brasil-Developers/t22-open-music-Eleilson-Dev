@@ -1,3 +1,4 @@
+// esse é o script responsavel por alterar o tema e armazenar o thema selecionado no localstorange
 import { lightThemeIcon, darkThemeIcon } from './icons.js';
 
 const body = document.body;
@@ -9,7 +10,7 @@ const updateThemeIcon = () => {
 };
 
 const changeTheme = () => {
-  const currentTheme = localStorage.getItem('theme');
+  const currentTheme = localStorage.getItem('@openMusic:theme');
 
   if (currentTheme) {
     document.body.classList.add(currentTheme);
@@ -20,7 +21,7 @@ const changeTheme = () => {
     body.classList.toggle('dark-theme');
     const theme = body.classList.contains('dark-theme') ? 'dark-theme' : '';
 
-    localStorage.setItem('theme', theme);
+    localStorage.setItem('@openMusic:theme', theme);
 
     updateThemeIcon();
   });

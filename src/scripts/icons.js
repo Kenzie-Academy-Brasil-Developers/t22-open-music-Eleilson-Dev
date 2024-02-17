@@ -1,3 +1,4 @@
+// esse script serve exclusivamente para criar os icones SVG que seram implantados por outro script usando impor/export
 export const lightThemeIcon = `
   <svg
     width="15"

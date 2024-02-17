@@ -1,24 +1,15 @@
 // script global
-import { albumList } from './albumsDatabase.js';
-import changeTheme from './changeTheme.js';
+// esse script serve importar e executar o encadeamento das functions
+
+import changeTheme from './theme.js';
 import selectGender from './selectGender.js';
-import activeRange from './inputRange.js';
-import createCard from './createCard.js';
-
-const addAlbumIntoList = (albumList) => {
-  const albunsListHTML = document.querySelector('.albuns-list');
-  albunsListHTML.innerHTML = '';
-
-  albumList.forEach((element) => {
-    albunsListHTML.innerHTML += createCard(element);
-  });
-};
+import { updateAlbuns, activeRange } from './inputRange.js';
 
 const routine = () => {
   changeTheme();
   selectGender();
+  updateAlbuns();
   activeRange();
-  addAlbumIntoList(albumList);
 };
 
 routine();
