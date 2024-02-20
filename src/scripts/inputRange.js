@@ -2,23 +2,24 @@
 
 import updateSlider from './updateSlider.js';
 import filterAlbuns from './filterAlbuns.js';
-import addAlbumIntoList from './addAlbumIntoList.js';
+import selectGenre from './selectGenre.js';
 
 const slider = document.querySelector('#price-range');
-const output = document.querySelector('#value');
 
 export const updateAlbuns = () => {
   const value = parseFloat(slider.value);
   const rangeValue = Math.round(value);
 
-  output.innerHTML = `R$ ${rangeValue}`;
+  const currentGenre = selectGenre(rangeValue);
 
-  const albunsFiltered = filterAlbuns(rangeValue);
-
-  updateSlider(slider, value);
-  addAlbumIntoList(albunsFiltered);
+  filterAlbuns(rangeValue, currentGenre);
 };
 
 export const activeRange = () => {
-  slider.addEventListener('input', updateAlbuns);
+  updateSlider(slider, slider.value);
+
+  slider.addEventListener('change', updateAlbuns);
+  slider.addEventListener('input', () => {
+    updateSlider(slider, slider.value);
+  });
 };

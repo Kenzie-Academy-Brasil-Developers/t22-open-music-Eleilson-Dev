@@ -1,6 +1,10 @@
 // esse script serve pra atualizar dinamicamente a barra de preenchimento do input Range
+const output = document.querySelector('#value');
 const updateSlider = (slider, value) => {
+  const rangeValue = Math.round(parseFloat(value));
   const numPercent = (value / slider.max) * 100;
+
+  output.innerHTML = `R$ ${rangeValue}`;
 
   const color = `
     linear-gradient(
