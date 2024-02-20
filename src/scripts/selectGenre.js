@@ -4,7 +4,7 @@ const genresHTML = document.querySelectorAll('.genre-Select');
 // selectedBtn => Mantém uma referência ao botão atualmente selecionado
 let selectedBtn = document.querySelector('.selected');
 
-const selectGenre = (rangeValue) => {
+const selectGenre = () => {
   genresHTML.forEach((btn) => {
     btn.addEventListener('click', () => {
       if (selectedBtn) {
