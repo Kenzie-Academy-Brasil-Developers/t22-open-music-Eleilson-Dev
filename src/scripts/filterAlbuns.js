@@ -4,6 +4,9 @@ import addAlbumIntoList from './addAlbumIntoList.js';
 import fetchMusicData from './api.js';
 
 const filterAlbuns = async (value, genre) => {
+  const loading = document.querySelector('.main__loading');
+  const albunsList = document.querySelector('.albuns-list');
+
   try {
     const data = await fetchMusicData();
     const filteredAlbuns = data.filter((album) => {
@@ -13,6 +16,11 @@ const filterAlbuns = async (value, genre) => {
 
       return album.genre === genre && Number(album.price) <= value;
     });
+
+    if (data) {
+      loading.style.display = 'none';
+      albunsList.style.display = 'flex';
+    }
 
     addAlbumIntoList(filteredAlbuns);
   } catch (error) {

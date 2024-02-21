@@ -11,6 +11,7 @@
 
 .albuns-list {
   display: flex;
+  display: none;
   justify-content: space-between;
   gap: 1.25rem 3.125rem;
   flex-wrap: wrap;
